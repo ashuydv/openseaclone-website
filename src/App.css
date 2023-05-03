@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 1500px;
+    width: 100%;
+    margin: auto;
+    overflow: hidden !important;
+}
+
+.navbar {
+    background-color: transparent;
+    color: #fff;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+}
+
+.navbar.colorChange {
+    background-color: #fff;
+    color: #000 !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#backgroundGrad {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 2rem;
+}
+
+#backgroundImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), white), url("https://images.alphacoders.com/898/898380.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: blur(10px);
+    transform: scale(1.1);
+}
+
+.slick-prev {
+    left: 8px !important;
+    z-index: 1;
+}
+
+.slick-next::before,
+.slick-prev::before {
+    font-size: 30px !important;
+    color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.slick-next {
+    right: 17px !important;
+    z-index: 1;
+}
+
+.contentImage {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    max-width: 360px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1));
+    z-index: 2;
+    opacity: 0.75;
+    top: 0%;
+    left: 0%;
+}
+
+.desc {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+    padding: 0 10px;
+    z-index: 2;
+}
+
+.absolute.top-0.left-0.right-0.z-10.h-full.bg-white.rounded-md.shadow {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 10;
+    height: 100%;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-bottom: 2px solid !important;
+    border-radius: 0px;
+}
